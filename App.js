@@ -13,8 +13,11 @@ import { Container, Header, Left, Body, Right, Title, Content, List, ListItem, B
 const datas = [
   'さば2p 198円',
   '人参1本 38円',
-  'さば2p 198円',
-  '人参1本 38円',
+  'トマト 98円',
+  'きゅうり1本 38円',
+  'なし 158円',
+  'たまご1パック 218円',
+  '鳥モモ肉 198円',
 ];
 export default class SwipeableListExample extends Component {
   constructor(props) {
@@ -65,7 +68,7 @@ export default class SwipeableListExample extends Component {
               </Body>
             </CardItem>
           </Card>
-          <Button rounded danger onPress={() => alert("This is Card Header")} style={{ marginLeft: 250, marginTop: 5 }}>
+          <Button rounded danger onPress={() => alert("最安値を追加しますか?")} style={{ marginLeft: 250, marginTop: 5 }}>
             <Text> + 特価メモ </Text>
           </Button>
         </Content>
